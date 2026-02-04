@@ -1,0 +1,68 @@
+:root {
+    --primary: #F27125;
+    --primary-gradient: linear-gradient(135deg, #F27125 0%, #ff9a44 100%);
+    --dark: #1a1a1a;
+    --light: #ffffff;
+    --gray: #f8f9fa;
+    --text: #444;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; background-color: #fff; scroll-behavior: smooth; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Navbar */
+.navbar { padding: 20px 0; position: sticky; top: 0; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); z-index: 1000; }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 22px; font-weight: 800; color: var(--dark); letter-spacing: -1px; }
+.logo span { color: var(--primary); }
+.nav-links { display: flex; list-style: none; gap: 30px; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; font-size: 14px; }
+.btn-cta-small { background: var(--primary-gradient); color: white !important; padding: 8px 20px; border-radius: 50px; }
+
+/* Hero */
+.hero { padding: 80px 0; background: radial-gradient(circle at top right, #fff5ee, #fff); }
+.hero-wrapper { display: flex; align-items: center; gap: 50px; }
+.hero-text { flex: 1; }
+.badge { background: #ffe8d9; color: var(--primary); padding: 5px 15px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+.hero h1 { font-size: 56px; line-height: 1.1; margin: 20px 0; font-weight: 800; color: var(--dark); }
+.text-gradient { background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero p { font-size: 18px; color: #666; margin-bottom: 30px; }
+.hero-btns { display: flex; gap: 15px; }
+.btn-primary { background: var(--primary-gradient); color: white; padding: 15px 35px; border-radius: 12px; text-decoration: none; font-weight: 600; box-shadow: 0 10px 20px rgba(242, 113, 37, 0.3); transition: 0.3s; }
+.btn-secondary { border: 1px solid #ddd; padding: 15px 35px; border-radius: 12px; text-decoration: none; color: var(--dark); font-weight: 600; }
+.hero-image { flex: 1; }
+.poster-card img { width: 100%; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); transform: rotate(2deg); transition: 0.5s; }
+.poster-card img:hover { transform: rotate(0deg); }
+
+/* Gallery */
+.section { padding: 100px 0; }
+.section-title { font-size: 32px; font-weight: 800; text-align: center; margin-bottom: 50px; color: var(--dark); }
+.grid-gallery { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: 200px 200px; gap: 20px; }
+.grid-item { border-radius: 20px; background-size: cover; background-position: center; position: relative; overflow: hidden; cursor: pointer; }
+.grid-item.tall { grid-row: span 2; }
+.overlay { position: absolute; inset: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); display: flex; align-items: flex-end; padding: 25px; color: white; opacity: 0; transition: 0.3s; }
+.grid-item:hover .overlay { opacity: 1; }
+
+/* Merch */
+.merch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.merch-card { background: var(--gray); border-radius: 24px; padding: 10px; text-align: center; transition: 0.3s; }
+.merch-img img { width: 100%; border-radius: 18px; height: 300px; object-fit: cover; }
+.merch-info { padding: 20px; }
+.merch-card:hover { transform: translateY(-10px); background: #fff; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+
+/* Form */
+.register-card { background: var(--dark); border-radius: 30px; padding: 60px; display: flex; gap: 40px; color: white; }
+.register-info { flex: 1; }
+.register-info h2 { font-size: 40px; margin-bottom: 20px; }
+.register-form { flex: 1.2; display: flex; flex-direction: column; gap: 15px; }
+.register-form input { padding: 18px; border-radius: 12px; border: none; background: #2a2a2a; color: white; font-size: 16px; }
+.btn-submit { background: var(--primary-gradient); color: white; padding: 18px; border: none; border-radius: 12px; font-weight: 700; cursor: pointer; margin-top: 10px; }
+
+/* Success Modal */
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); align-items: center; justify-content: center; z-index: 2000; }
+.modal-content { background: white; padding: 50px; border-radius: 30px; text-align: center; max-width: 450px; }
+.check-icon { width: 80px; height: 80px; background: #4BB543; color: white; font-size: 40px; line-height: 80px; border-radius: 50%; margin: 0 auto 20px; }
+.btn-close { background: var(--dark); color: white; padding: 12px 40px; border: none; border-radius: 10px; margin-top: 25px; cursor: pointer; }
+
+.footer { text-align: center; padding: 50px; color: #999; font-size: 14px; }
