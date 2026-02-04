@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT POLYSCHOOL TOUR | Trải nghiệm đẳng cấp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">FPT <span>POLYSCHOOL</span></div>
+            <ul class="nav-links">
+                <li><a href="#facilities">Cơ sở vật chất</a></li>
+                <li><a href="#merch">Quà tặng</a></li>
+                <li><a href="#register" class="btn-cta-small">Đăng ký ngay</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" bgcolor="black">
+        <div class="container hero-wrapper">
+            <div class="hero-text">
+                <span class="badge">Sự kiện lớn nhất năm</span>
+                <h1>Khám phá <br><span class="text-gradient">FPT POLYSCHOOL TOUR</span></h1>
+                <p>Môi trường học tập năng động, hiện đại chuẩn quốc tế đang chờ đón bạn. Đăng ký để trở thành một phần của cộng đồng sinh viên tài năng.</p>
+                <div class="hero-btns">
+                    <a href="#register" class="btn-primary">Tham gia ngay</a>
+                    <a href="#activities" class="btn-secondary">Tìm hiểu thêm</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="poster-card">
+                    <img src="images/z5054571266910_0e7bf0ea514b51f7f63c4f66e95f7188-2-1024x576.jpg" alt="Poster" onerror="this.src='https://images.unsplash.com/photo-1523050853063-bd8012fecad2?auto=format&fit=crop&w=600&q=80'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="section">
+        <div class="container">
+            <h2 class="section-title">Trải nghiệm không giới hạn</h2>
+            <div class="grid-gallery">
+                <div class="grid-item tall" style="background-image: url('images/DSC03721-1024x1024.jpeg')">
+                    <div class="overlay"><h3>Cơ sở vật chất 5 sao</h3></div>
+                </div>
+                <div class="grid-item" style="background-image: url('images/Anh-co-so-vat-chat-Pho-thong-Cao-dang-FPT-TP-HCM-2.jpg')">
+                    <div class="overlay"><h3>Studio</h3></div>
+                </div>
+                <div class="grid-item" style="background-image: url('images/-7774-1664763311_1200x0.jpg')">
+                        
+                    <div class="overlay"><h3>CLB Vovinam</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="merch" class="section merch-section">
+        <div class="container">
+            <h2 class="section-title">Quà tặng độc quyền</h2>
+            <div class="merch-grid">
+                <div class="merch-card">
+                    <div class="merch-img"><img src="images/Gemini_Generated_Image_di0ztdi0ztdi0ztd.png" onerror="this.src='https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=300&q=80'"></div>
+                    <div class="merch-info">
+                        <h3>Thẻ Đeo</h3>
+                        <p>Limited Edition</p>
+                    </div>
+                </div>
+                <div class="merch-card">
+                    <div class="merch-img"><img src="images/Gemini_Generated_Image_tx85xhtx85xhtx85.png" onerror="this.src='https://images.unsplash.com/photo-1449247704656-1369149673b3?auto=format&fit=crop&w=300&q=80'"></div>
+                    <div class="merch-info">
+                        <h3>Áo Khoác</h3>
+                        <p>Thời trang & Năng động</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="section">
+        <div class="container">
+            <div class="register-card">
+                <div class="register-info">
+                    <h2>Sẵn sàng <br>khám phá chưa?</h2>
+                    <p>Hãy để lại thông tin, Ban tổ chức sẽ gửi thư mời trực tiếp cho bạn qua Zalo/Email.</p>
+                </div>
+                <form id="tourForm" class="register-form">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Họ và tên" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="phone" placeholder="Số điện thoại / Zalo" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="school" placeholder="Trường THPT" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Xác nhận đăng ký ngay</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="check-icon">✓</div>
+            <h2>Đã gửi thành công!</h2>
+            <p>Thông tin của bạn đã được chuyển đến hệ thống của <strong>FPT Polyschool</strong>. Hẹn gặp lại bạn sớm nhất!</p>
+            <button onclick="closeModal()" class="btn-close">Đóng</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 FPT POLYSCHOOL. Design by Team Ong Chúa.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
